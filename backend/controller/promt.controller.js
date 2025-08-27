@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import { Promt } from "../model/promt.model.js";
 
 const openai = new OpenAI({
-  baseURL: "https://api.deepseek.com",
+  baseURL: "https://platform.openai.com/",
   apiKey: process.env.OPENAI_API_KEY,
 });
 export const sendPromt = async (req, res) => {
